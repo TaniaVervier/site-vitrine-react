@@ -1,10 +1,22 @@
 import React from 'react';
+import Logo from '../components/Logo';
+import Mouse from '../components/Mouse';
+import Navigation from '../components/Navigation';
+import Project from '../components/Project';
+import Buttons from './../components/Buttons';
 
 const Project2 = () => {
     return (
-        <div>
-            Project2
-        </div>
+        <main>
+            <Mouse />
+
+            <div className="project">
+                <Navigation />
+                <Logo />
+                <Project projectNumber={1} />
+                <Buttons left={"/project-1"} right={"/project-3"} />
+            </div>
+        </main>
     );
 };
 
